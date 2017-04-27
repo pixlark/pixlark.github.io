@@ -13,6 +13,7 @@ p {
 a, a:visited {
 
 	color: grey;
+	text-decoration: none;
 
 }
 
@@ -29,7 +30,7 @@ a, a:visited {
 
 } 
 
-.album {
+.small-text {
 
 	font-size: 14px;
 
@@ -37,6 +38,7 @@ a, a:visited {
 
 h1 {
 
+	margin-top: 12px;
 	margin-bottom: 2px;
 	padding-bottom: 2px;
 
