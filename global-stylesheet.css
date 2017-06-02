@@ -24,34 +24,41 @@ h2 {
 	margin-top: 0px;
 }
 
+#big-title {
+	font-size: 45px;
+	text-align: center;
+}
+
 #entry-container {
-	display: block;
+	display: flex;
 	margin: auto;
 	padding: 0;
 	width: 900px;
-	background: #ccc;
 }
 
 .entry {
 	/*border: 5px solid black;*/
 	display: block;
-	float: left;
 	margin: 0;
 	padding: 0;
-	/*padding-top: 0px;
-	padding-left: 20px;
-	padding-right: 20px;
-	margin-left: 110px;*/
 	width: 700px;
+	flex: none;
+	flex-wrap: wrap;
 	text-align: left;
 }
 
 .nav-bar {
 	/*border: 2px solid black;*/
 	display: block;
+	-webkit-flex: initial;
+	flex: initial;
 	float: left;
 	margin: 0;
 	padding: 0;
 	width: 100px;
 	height: 100%;
+}
+
+.small-text {
+	font-size: 14px;
 }
