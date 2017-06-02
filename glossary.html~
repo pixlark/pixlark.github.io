@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+
+	  <title>Programming Glossary</title>
+	  <link rel="stylesheet" href="global-stylesheet.css" />
+	  <link rel="stylesheet" href="glossary-stylesheet.css" />
+	  
+	</head>
+
+	<body>
+
+	  <h1>Programming Glossary</h1>
+
+	  <div id="nav-bar">
+
+		Text
+
+	  </div>
+	  
+	  <div>
+
+		
+
+	  </div>
+	  
+	</body>
+	
+</html>
