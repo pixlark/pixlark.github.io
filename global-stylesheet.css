@@ -9,6 +9,10 @@ body {
 	overflow-y: scroll;
 }
 
+li {
+	font-size: 16px;
+}
+
 p {
 	font-size: 18px;
 }
@@ -19,12 +23,14 @@ a, a:visited {
 }
 
 h1 {
+	font-size: 32px;
 	margin-top: 12px;
 	margin-bottom: 2px;
 	padding-bottom: 2px;
 }
 
 h2 {
+	font-size: 24px;
 	margin-top: 0px;
 }
 
@@ -61,8 +67,13 @@ h2 {
 	padding: 0;
 	width: 100px;
 	height: 100%;
+	font-size: 16px;
 }
 
 .small-text {
 	font-size: 14px;
+}
+
+.post-img {
+	width: 700px;
 }
