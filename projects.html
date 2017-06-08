@@ -54,6 +54,20 @@
 
 		<div class="entry">
 
+		  <h1>pixlib</h1>
+
+		  <h2><a href="https://github.com/pixlark/pixlib">Git Repository</a></h2>
+
+		  pixlib is my personal C/C++ standard library. Eventually, it will encompass I/O, Data Structures, Searching/Sorting, etc, but all written by me from scratch. This offers two advantages: one, it's written in a way that I understand (because I wrote it), and two, it's written in a way that I prefer. For example, I really dislike stringstreams in the C++ standard library, so I may try and code a replacement that has the same advantages but done in my way (this is the advantage of using a language with low-level access - I can literally create a new one from the ground up with unix write() calls and the like).
+			<br/> <br/>
+			Another example is the Vector class, which A: Has a terrible name (vectors are a math thing guys, not a list!) and B: I don't know exactly how it works. My replacement, DynArr, has a better name and was written by me, so I know exactly when and how it resizes. If I need to add more functionality to it, I go and do it myself. It's probably a bit slower, but it's not hidden from my view. If I find that it's slowing something down, then I can go and figure out how to optimize it.
+			<br/> <br/>
+			And of course, most importantly - it's <i>fun</i>. And it's a good learning experience.
+		  
+		</div>
+
+		<div class="entry">
+
 		  <h1>Unix Command Rewrite</h1>
 
 		  <h2><a href="https://github.com/pixlark/UnixCommandRewrite">Git Repository</a></h2>
@@ -64,6 +78,7 @@
 
 			<li>cat</li>
 			<li>grep</li>
+			<li>ls</li>
 			
 		  </ul>
 		  
