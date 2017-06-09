@@ -29,6 +29,18 @@
 
 	  <div class="entry">
 
+		<h1>I did it.</h1>
+		<h2>08-06-2017</h2>
+
+		<p>I've been working through the book <a href="https://www.crypto101.io/">Crypto 101</a> to learn about cryptography. After getting through the section on Block Ciphers, I wanted to actually do something. So I found a block cipher algorithm, the <a href="https://en.wikipedia.org/wiki/Hill_cipher">Hill Cipher</a>, which <i>looked</i> simple. All I had to do was learn about matrices. So I started writing a python library that dealt with them (side-note: I realize that it would have been much easier to use something like numpy, but then I don't really have an understanding of how it works). </p>
+		<p>I got encryption working - now for decryption. This involves inverting the matrix - sounds simple, right? No. It's really not. It took a day to figure out how this works and to get it working in python. That's when I realized that this algorithm uses a different type of inversion called <i>Modular Inversion</i>. It's not that different, the last step just uses the modular inversion of the determinant. I just have to learn what modular inversion is. Turns out that understanding that requires learning about another entirely new area of math, modular arithmetic. Took another day to figure that out (and I still don't really understand the Extended Euclidean Algorithm).</p>
+		<p>Today, on day three, I finally got it working. My program generates a random square matrix and streams your plaintext through, splitting it into vectors and multiplying them against the key matrix. The ciphertext is then decoded by performing a modular matrix inversion on the key and streaming the ciphertext through it in the same way as before.</p>
+		<p>It's really not as impressive as it sounds, but whenever I finally conquer something difficult, I love to talk about it in an incredibly obscure way to boost my ego. Anyway, this is what I've been doing recently. I suppose I should move on to the next chapter in Crypto 101 now.</p>
+		
+	  </div>
+	  
+	  <div class="entry">
+
 		<h1>Updated the Website</h1>
 		<h2>02-06-2017</h2>
 
@@ -37,7 +49,7 @@
 		<span class="small-text">Album I can't stop listening to: <i>Madvillainy</i> by Madvillain <br/>
 		Standout songs: <i>Operation Lifesaver, Fancy Clown </i>and<i> ALL CAPS</i> </span>
 		
-		</div>
+	  </div>
 	  
 	<div class="entry">
 	<h1> More on data structures and algorithms </h1>
