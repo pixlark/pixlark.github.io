@@ -46,6 +46,12 @@ h2 {
 	width: 900px;
 }
 
+.cover-title {
+	font-size: 22px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
 .entry {
 	/*border: 5px solid black;*/
 	display: block;
