@@ -1,0 +1,36 @@
+* {
+	overflow: hidden;
+}
+
+.whatisthis {
+	position: fixed;
+	z-index: 5;
+}
+
+.index-links {
+	display: inline-block;
+	text-align: center;
+}
+
+.main-link {
+	font-size: 30px;
+}
+
+.v-outer { /* Creates an html table the size of the parent (the background) */
+	display: table;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+.v-middle { /* Creates a cell in parent table that is centered vertically */
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.v-inner { /* Creates div within cell that has width of 580 */
+	margin-left: auto;
+	margin-right: auto;
+	width: auto;
+	text-align: center;
+}
