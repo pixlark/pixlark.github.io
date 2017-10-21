@@ -1,194 +1,327 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Blog</title>
+  <link rel="icon" href="favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="global-stylesheet.css" type=
+  "text/css" />
+  <script type="text/javascript">
+//<![CDATA[
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  <head>
+          ga('create', 'UA-101093030-1', 'auto');
+          ga('send', 'pageview');
+  //]]>
+  </script>
+  <link rel="icon" href="favicon.png" type="image/x-icon" />
+</head>
 
-	<title>Blog</title>
-	<link rel="icon" href="favicon.png" type="image/x-icon"/>
-	<link rel="stylesheet" href="global-stylesheet.css" />
+<body>
+  <h1 id="big-title">BLOG</h1>
 
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  <div id="entry-container">
+    <div class="nav-bar">
+      <b>Blog</b><br />
+      <a href="projects.html">Projects</a><br />
+      <a href="music.html">Music</a><br />
+      <!--<a href="glossary.html">Glossary</a>-->
+    </div>
 
-	  ga('create', 'UA-101093030-1', 'auto');
-	  ga('send', 'pageview');
-    </script>
-	
- <link rel="icon" href="favicon.png" type="image/x-icon"/>
-  </head>
+    <div class="entries">
+      <div class="entry">
+        <h1>Edict</h1>
 
-  <body>
+        <h2>21-08-2017</h2>
 
-	<h1 id="big-title">BLOG</h1>
+        <p>I've always been a fan of Emacs, but it has a lot of
+        problems. Mostly these problems come from the fact that it
+        it 40 years old. It's got too much baggage. So I started on
+        a project that I've wanted to do for a while. I'm writing
+        my own text editor called <i>Edict</i>. Just today I
+        finished v0.1. It has very basic functionality - moving
+        around the cursor, entering text into the buffer, removing
+        text, saving, and loading. It's not anywhere near
+        fully-featured enough to actually be usable, but it's on
+        it's way. Hopefully I will have it at a fully-usable
+        version 1.0 in the next few months.</p>
 
-	<div id="entry-container">
+        <p>Over in the PROJECTS section, you can see a nice gif of
+        it working.</p><span class="small-text">Album I can't stop
+        listening to: <i>The College Dropout</i> by Kanye
+        West<br />
+        Standout songs: <i>We Don't Care, Spaceship, Family
+        Business</i> and <i>Through the Wire</i></span>
+      </div>
+      
+      <hr />
 
-	  <div class="nav-bar">
+      <div class="entry">
+        <h1>Ludum Dare 39</h1>
 
-		<b>Blog</b> <br/>
-		<a href="projects.html">Projects</a><br/>
-		<a href="music.html">Music</a><br/>
-		<a href="glossary.html">Glossary</a>
+        <h2>02-08-2017</h2>
 
-	  </div>
+        <p>I started this blog to write about the Ludum Dare 38,
+        and here I am again. This one isn't quite as intersting. I
+        used the Unity Engine rather than what I first intended to
+        use, SDL. This is because the idea I had was too complex to
+        write in two days with something like SDL, at least for
+        someone of my skill level. The end product can be found
+        <a href=
+        "https://ldjam.com/events/ludum-dare/39/dont-be-square">here.</a>
+        It's a simple platformer game with the twist that you
+        cannot control your movement with airborne. Instead, you
+        need to align yourself on slopes so that the jump will arc
+        to the correct place.</p>
 
-	<div class="entries">
+        <p>The code is very uninteresting. The only unique thing I
+        did was looking at the orientation of the player every
+        frame to determine which side is upwards. All vertical jump
+        calculations afterwards were performed using that
+        vector.</p>
+      </div>
+      
+      <hr />
 
-	  <div class="entry">
+      <div class="entry">
+        <h1>u8 overflow and a color picking program.</h1>
 
-		<h1>u8 overflow and a color picking program.</h1>
-		<h2>23-06-2017</h2>
+        <h2>23-06-2017</h2>
 
-		<p>My and my friend <a href="https://ben-humphries.github.io">Ben</a> have been working on small projects together for the past week or so. One of us will screenshare to the other and we work together for a couple hours. After that, whoever is coding usually takes over and finishes it out on their own time. Most recently, I was the coder, and our project was <a href="https://github.com/pixlark/ColorPicker">a color picking program,</a> where you have an adjustable gradient that you can click on which gives you an RGB code. </p>
+        <p>My and my friend <a href=
+        "https://ben-humphries.github.io">Ben</a> have been working
+        on small projects together for the past week or so. One of
+        us will screenshare to the other and we work together for a
+        couple hours. After that, whoever is coding usually takes
+        over and finishes it out on their own time. Most recently,
+        I was the coder, and our project was <a href=
+        "https://github.com/pixlark/ColorPicker">a color picking
+        program,</a> where you have an adjustable gradient that you
+        can click on which gives you an RGB code.</p>
 
-		<p>Well, at one point we have an incredibly strange bug. The method draw_gradient() was getting stuck in an infinite loop, and we couldn't figure why. Our first thought was that it was hitting some sort of undefined behaviour in the SDL library, so we commented out everything besides the nested for loops. Still happened, except for when we never called draw_gradient(). So it had to be something with the for loops... but what? It's a <i>for loop</i>, the only way for it to be infinite is if the condition is never-</p>
+        <p>Well, at one point we have an incredibly strange bug.
+        The method draw_gradient() was getting stuck in an infinite
+        loop, and we couldn't figure why. Our first thought was
+        that it was hitting some sort of undefined behaviour in the
+        SDL library, so we commented out everything besides the
+        nested for loops. Still happened, except for when we never
+        called draw_gradient(). So it had to be something with the
+        for loops... but what? It's a <i>for loop</i>, the only way
+        for it to be infinite is if the condition is never-</p>
 
-		<p>"It's overflowing!" we cried out at the same time. Since each RGB value was an unsigned 8 bit integer, when we looped over it to draw the gradient, it would never actually reach the condition, simply increment over 255 and overflow into 0. So in order to keep using u8s rather than u16s (because we really needed that efficiency for a color-picking program), the for-loops were changed to do-while loops.</p>
+        <p>"It's overflowing!" we cried out at the same time. Since
+        each RGB value was an unsigned 8 bit integer, when we
+        looped over it to draw the gradient, it would never
+        actually reach the condition, simply increment over 255 and
+        overflow into 0. So in order to keep using u8s rather than
+        u16s (because we really needed that efficiency for a
+        color-picking program), the for-loops were changed to
+        do-while loops.</p>
 
-		<p>Hopefully this is a bit of a lesson on premature optimization. And on the topic of the color picker - I'm planning to keep working on it myself and add an HSV mode. Look forward to it. And if you want to take a glance at another project we started together that Ben is now upkeeping, check out <a href="https://github.com/ben-humphries/Conways-Game-Of-Life">Conway's Game of Life</a>.</p>
+        <p>Hopefully this is a bit of a lesson on premature
+        optimization. And on the topic of the color picker - I'm
+        planning to keep working on it myself and add an HSV mode.
+        Look forward to it. And if you want to take a glance at
+        another project we started together that Ben is now
+        upkeeping, check out <a href=
+        "https://github.com/ben-humphries/Conways-Game-Of-Life">Conway's
+        Game of Life</a>.</p>
+      </div>
+      <hr />
 
-	  </div>
-	  
-	  <hr />
-	  
-	  <div class="entry">
+      <div class="entry">
+        <h1>I did it.</h1>
 
-		<h1>I did it.</h1>
-		<h2>08-06-2017</h2>
+        <h2>08-06-2017</h2>
 
-		<p>I've been working through the book <a href="https://www.crypto101.io/">Crypto 101</a> to learn about cryptography. After getting through the section on Block Ciphers, I wanted to actually do something. So I found a block cipher algorithm, the <a href="https://en.wikipedia.org/wiki/Hill_cipher">Hill Cipher</a>, which <i>looked</i> simple. All I had to do was learn about matrices. So I started writing a python library that dealt with them (side-note: I realize that it would have been much easier to use something like numpy, but then I don't really have an understanding of how it works). </p>
-		<p>I got encryption working - now for decryption. This involves inverting the matrix - sounds simple, right? No. It's really not. It took a day to figure out how this works and to get it working in python. That's when I realized that this algorithm uses a different type of inversion called <i>Modular Inversion</i>. It's not that different, the last step just uses the modular inversion of the determinant. I just have to learn what modular inversion is. Turns out that understanding that requires learning about another entirely new area of math, modular arithmetic. Took another day to figure that out (and I still don't really understand the Extended Euclidean Algorithm).</p>
-		<p>Today, on day three, I finally got it working. My program generates a random square matrix and streams your plaintext through, splitting it into vectors and multiplying them against the key matrix. The ciphertext is then decoded by performing a modular matrix inversion on the key and streaming the ciphertext through it in the same way as before.</p>
-		<p>It's really not as impressive as it sounds, but whenever I finally conquer something difficult, I love to talk about it in an incredibly obscure way to boost my ego. Anyway, this is what I've been doing recently. I suppose I should move on to the next chapter in Crypto 101 now.</p>
-		
-	  </div>
+        <p>I've been working through the book <a href=
+        "https://www.crypto101.io/">Crypto 101</a> to learn about
+        cryptography. After getting through the section on Block
+        Ciphers, I wanted to actually do something. So I found a
+        block cipher algorithm, the <a href=
+        "https://en.wikipedia.org/wiki/Hill_cipher">Hill
+        Cipher</a>, which <i>looked</i> simple. All I had to do was
+        learn about matrices. So I started writing a python library
+        that dealt with them (side-note: I realize that it would
+        have been much easier to use something like numpy, but then
+        I don't really have an understanding of how it works).</p>
 
-	  <hr />
-	  
-	  <div class="entry">
+        <p>I got encryption working - now for decryption. This
+        involves inverting the matrix - sounds simple, right? No.
+        It's really not. It took a day to figure out how this works
+        and to get it working in python. That's when I realized
+        that this algorithm uses a different type of inversion
+        called <i>Modular Inversion</i>. It's not that different,
+        the last step just uses the modular inversion of the
+        determinant. I just have to learn what modular inversion
+        is. Turns out that understanding that requires learning
+        about another entirely new area of math, modular
+        arithmetic. Took another day to figure that out (and I
+        still don't really understand the Extended Euclidean
+        Algorithm).</p>
 
-		<h1>Updated the Website</h1>
-		<h2>02-06-2017</h2>
+        <p>Today, on day three, I finally got it working. My
+        program generates a random square matrix and streams your
+        plaintext through, splitting it into vectors and
+        multiplying them against the key matrix. The ciphertext is
+        then decoded by performing a modular matrix inversion on
+        the key and streaming the ciphertext through it in the same
+        way as before.</p>
 
-		<p>I decided to update the look of the website today. I added a navigation bar which takes you to a list of my most pertinent programming projects, a personal glossary that I'll be using to keep track of terms, a list of the music I've written, and even a little page for my stories (Abandon all hope ye who enter here!). </p>
-		<p>If anyone finds a bug with the site, just leave an issue at <a href="https://github.com/pixlark/pixlark.github.io">the repository</a>. In a few days, I'm going to leave an update on what I've been learning about this past month of inactivity.</p>
-		<span class="small-text">Album I can't stop listening to: <i>Madvillainy</i> by Madvillain <br/>
-		Standout songs: <i>Operation Lifesaver, Fancy Clown </i>and<i> ALL CAPS</i> </span>
-		
-	</div>
+        <p>It's really not as impressive as it sounds, but whenever
+        I finally conquer something difficult, I love to talk about
+        it in an incredibly obscure way to boost my ego. Anyway,
+        this is what I've been doing recently. I suppose I should
+        move on to the next chapter in Crypto 101 now.</p>
+      </div>
+      <hr />
 
-	<hr />
-	  
-	<div class="entry">
-	<h1> More on data structures and algorithms </h1>
-	<h2> 04-05-2017 </h2>
-	
-	<p> After a couple days of trying to teach myself about
-	data structures, I learned two things: </p>
-	
-	<ol>
-		<li>Data Structures and Algorithms are not seperate topics,
-		in fact they are so intertwined that it's practically useless
-		to try and learn them seperately. </li>
-		<li>It's much more difficult than I anticipated to teach yourself about this topic 
-		just by googling. </li>	
-	</ol>
-	
-	<p>So, I've decided to learn about this stuff through an online course -
-	specifically "Algorithms I" with <a href="https://en.wikipedia.org/wiki/Robert_Sedgewick_(computer_scientist)">Robert Sedgewick.</a> Let's see how <em>this</em> goes.</p>
-	
-	<p class="small-text"> Album I can't stop listening to: <i>Hardwired... to Self-Destruct</i> 
-   by Metallica <br/>
-   Standout songs: <i>Hardwired, Atlas Rise!, </i>and<i> Spit out the Bone </i>
-   </p>
-	
-	</div>
+      <div class="entry">
+        <h1>Updated the Website</h1>
 
-	<hr />
-	
-	<div class="entry">
-	<h1> Learning about data structures </h1>
-	<h2> 27-04-2017 </h2>
-	
-	<p> Since I'm self-taught, I often feel
-	like I'm missing out on important formal
-	topics. So, I've decided to try writing implementations
-	of some basic but important data structures:
-	</p>
+        <h2>02-06-2017</h2>
 
-	<ul>
+        <p>I decided to update the look of the website today. I
+        added a navigation bar which takes you to a list of my most
+        pertinent programming projects, a personal glossary that
+        I'll be using to keep track of terms, a list of the music
+        I've written, and even a little page for my stories
+        (Abandon all hope ye who enter here!).</p>
 
-	<li> Linked Lists </li>
-	<li> Queues </li>
-	<li> Stacks </li>
-	<li> Binary Trees </li>
-	<li> Hash Tables </li>	
-	
-	</ul>
-	
-	<p>
+        <p>If anyone finds a bug with the site, just leave an issue
+        at <a href=
+        "https://github.com/pixlark/pixlark.github.io">the
+        repository</a>. In a few days, I'm going to leave an update
+        on what I've been learning about this past month of
+        inactivity.</p><span class="small-text">Album I can't stop
+        listening to: <i>Madvillainy</i> by Madvillain<br />
+        Standout songs: <i>Operation Lifesaver, Fancy Clown</i> and
+        <i>ALL CAPS</i></span>
+      </div>
+      <hr />
 
-	And after that, I'm going to move onto algorithms:
+      <div class="entry">
+        <h1>More on data structures and algorithms</h1>
 
-	</p>
-	
-	<ul>
+        <h2>04-05-2017</h2>
 
-	<li> Quicksort </li>
-	<li> Insertion sort </li>
-	<li> DFT </li>
-	<li> BFT </li>
-	<li> Heapsort </li>
-	<li> A* </li>	
-	
-	</ul>
+        <p>After a couple days of trying to teach myself about data
+        structures, I learned two things:</p>
 
-	<p>Let's see how this goes...</p>
-	
-	<p class="small-text"> Thanks to
-	<a href="https://www.reddit.com/r/learnprogramming/comments/3vj635/what_data_structures_and_algorithms_should_every/cxo0hqo/">
-	guthran</a> for the lists. </p>
-	
-	</div>
+        <ol>
+          <li>Data Structures and Algorithms are not seperate
+          topics, in fact they are so intertwined that it's
+          practically useless to try and learn them
+          seperately.</li>
 
-	<hr />
-	
-	<div class="entry">
-	<h1> Ludum Dare 38 </h1>
-	<h2> 25-04-2017 </h2>
-	
-	<p> I just participated in the <a href="http://ldjam.com/"> Ludum Dare</a>, a game jam where thousands of people try to
-	create a fully-functional video game in 48 hours by themselves.
-	You have to write your own code, draw your own art, foley your
-	own sounds, and compose your own music. </p>
-	<p> My game, <a href="http://ldjam.com/events/ludum-dare/38/planet-defense"> Planetary Defense</a>, is a fun little thing where you rotate around a planet and set down towers (the theme was "Small World"). I used the
-	framework <a href="https://www.sfml-dev.org/">SFML</a>, which is very new to me, thus some pretty spaghetti code.</p>
-	<p> As someone who previously only used full engines like Unity,
-	SFML is very interesting. I've been watching the YouTube series
-   <a href="https://handmadehero.org/">Handmade Hero</a>, which is what convinced me to switch over to
-   a framework. It's definitely more difficult to program in, 
-   but it's so freeing to have access to so much stuff from the ground
-   up. </p>
-   <p> As a side note, the strange description to my game is meant
-   to be a parody of those <a href="https://en.wikipedia.org/wiki/Yars%27_Revenge">old Atari games</a> where they would come up
-   with ridiculously bad stories to try and legitimize the awful
-   graphics. </p>
-   <span class="small-text"> Album I can't stop listening to: <i>Shaken By A Low Sound</i> 
-   by Crooked Still <br/>
-   Standout songs: <em>Little Sadie, Ain't No Grave,</em> and <em> Ecstasy
-   </em> </span>
-	</div>
+          <li>It's much more difficult than I anticipated to teach
+          yourself about this topic just by googling.</li>
+        </ol>
 
+        <p>So, I've decided to learn about this stuff through an
+        online course - specifically "Algorithms I" with <a href=
+        "https://en.wikipedia.org/wiki/Robert_Sedgewick_(computer_scientist)">
+        Robert Sedgewick.</a> Let's see how <em>this</em> goes.</p>
+
+        <p class="small-text">Album I can't stop listening to:
+        <i>Hardwired... to Self-Destruct</i> by Metallica<br />
+        Standout songs: <i>Hardwired, Atlas Rise!,</i> and <i>Spit
+        out the Bone</i></p>
+      </div>
+      <hr />
+
+      <div class="entry">
+        <h1>Learning about data structures</h1>
+
+        <h2>27-04-2017</h2>
+
+        <p>Since I'm self-taught, I often feel like I'm missing out
+        on important formal topics. So, I've decided to try writing
+        implementations of some basic but important data
+        structures:</p>
+
+        <ul>
+          <li>Linked Lists</li>
+
+          <li>Queues</li>
+
+          <li>Stacks</li>
+
+          <li>Binary Trees</li>
+
+          <li>Hash Tables</li>
+        </ul>
+
+        <p>And after that, I'm going to move onto algorithms:</p>
+
+        <ul>
+          <li>Quicksort</li>
+
+          <li>Insertion sort</li>
+
+          <li>DFT</li>
+
+          <li>BFT</li>
+
+          <li>Heapsort</li>
+
+          <li>A*</li>
+        </ul>
+
+        <p>Let's see how this goes...</p>
+
+        <p class="small-text">Thanks to <a href=
+        "https://www.reddit.com/r/learnprogramming/comments/3vj635/what_data_structures_and_algorithms_should_every/cxo0hqo/">
+        guthran</a> for the lists.</p>
+      </div>
+      <hr />
+
+      <div class="entry">
+        <h1>Ludum Dare 38</h1>
+
+        <h2>25-04-2017</h2>
+
+        <p>I just participated in the <a href=
+        "http://ldjam.com/">Ludum Dare</a>, a game jam where
+        thousands of people try to create a fully-functional video
+        game in 48 hours by themselves. You have to write your own
+        code, draw your own art, foley your own sounds, and compose
+        your own music.</p>
+
+        <p>My game, <a href=
+        "http://ldjam.com/events/ludum-dare/38/planet-defense">Planetary
+        Defense</a>, is a fun little thing where you rotate around
+        a planet and set down towers (the theme was "Small World").
+        I used the framework <a href=
+        "https://www.sfml-dev.org/">SFML</a>, which is very new to
+        me, thus some pretty spaghetti code.</p>
+
+        <p>As someone who previously only used full engines like
+        Unity, SFML is very interesting. I've been watching the
+        YouTube series <a href="https://handmadehero.org/">Handmade
+        Hero</a>, which is what convinced me to switch over to a
+        framework. It's definitely more difficult to program in,
+        but it's so freeing to have access to so much stuff from
+        the ground up.</p>
+
+        <p>As a side note, the strange description to my game is
+        meant to be a parody of those <a href=
+        "https://en.wikipedia.org/wiki/Yars%27_Revenge">old Atari
+        games</a> where they would come up with ridiculously bad
+        stories to try and legitimize the awful
+        graphics.</p><span class="small-text">Album I can't stop
+        listening to: <i>Shaken By A Low Sound</i> by Crooked
+        Still<br />
+        Standout songs: <em>Little Sadie, Ain't No Grave,</em> and
+        <em>Ecstasy</em></span>
+      </div>
+    </div>
+
+    <div class="nav-bar"></div>
   </div>
-
-  <div class="nav-bar"> </div>
-	
-  </div>
-
-  </body>
-  
+</body>
 </html>
