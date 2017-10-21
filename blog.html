@@ -36,7 +36,7 @@
       <div class="entry">
         <h1>Edict</h1>
 
-        <h2>21-08-2017</h2>
+        <h2>21-10-2017</h2>
 
         <p>I've always been a fan of Emacs, but it has a lot of
         problems. Mostly these problems come from the fact that it
@@ -58,32 +58,38 @@
         Business</i> and <i>Through the Wire</i></span>
       </div>
       
-      <hr />
-
+		<hr />      
+      
       <div class="entry">
-        <h1>Ludum Dare 39</h1>
 
-        <h2>02-08-2017</h2>
+	 	<h1>Project structure, crazy algebra, and build systems. What have I been doing?</h1>
+	 	<h2>08-09-2017</h2>
 
-        <p>I started this blog to write about the Ludum Dare 38,
-        and here I am again. This one isn't quite as intersting. I
-        used the Unity Engine rather than what I first intended to
-        use, SDL. This is because the idea I had was too complex to
-        write in two days with something like SDL, at least for
-        someone of my skill level. The end product can be found
-        <a href=
-        "https://ldjam.com/events/ludum-dare/39/dont-be-square">here.</a>
-        It's a simple platformer game with the twist that you
-        cannot control your movement with airborne. Instead, you
-        need to align yourself on slopes so that the jump will arc
-        to the correct place.</p>
+	 	<p>I finished a <a href="https://github.com/pixlark/Agario-SDL">big project</a> today. It doesn't look like much, because on the gameplay side it's very simple. You move around and absorb pellets. There's no enemies or anything. It's a half-assed clone of <a href="https://agar.io/">agar.io</a>. But if you look inside the code, it's actually quite complicated.</p> 
 
-        <p>The code is very uninteresting. The only unique thing I
-        did was looking at the orientation of the player every
-        frame to determine which side is upwards. All vertical jump
-        calculations afterwards were performed using that
-        vector.</p>
-      </div>
+	 	<p>I wrote a robust (if simplistic) framework for 2D rendering that involves transformation between screen coordinates, or the coordinates that you use to write to the window, and world coordinates, or the imaginary coordinates that objects in the world use to keep track of each other, including translation and zooming of the camera. You can see the equations that accomplish that <a href="https://github.com/pixlark/Agario-SDL/blob/a3b97c079523f0539b26466f57ec91e4ff39ed48/src/draw.cc#L46">here</a>. Textures are kept track of using a hash-table (the implementation of which I wrote as well, and you can find <a href="https://github.com/pixlark/pixlib/blob/master/pixstructs.h">here</a>), and there's even code to calculate infinitely scrolling backgrounds.</p>
+
+	 	<p>On top of all that, I wrote a <a href="https://github.com/pixlark/Agario-SDL/blob/master/build.py">build system</a> that hooks into the Visual Studio compiler on the command line so that I never have to open Visual Studio again to compile on Windows - it only opens when I need to debug. And when I want to make another SDL project, I don't have to go and redo all of the damn project settings, I can just copy-paste build.py and modify a few strings. It's beautiful.</p>
+
+	 	<p>Maybe you can tell, but I'm quite proud. I finally have a basis for my projects - a solid framework and build system that I can use for any future 2D games. Let's see what I end up doing with it.</p>
+
+	 	<span class="small-text">Album I can't stop listening to: <i>My First Car</i> by Vulfpeck <br/>
+		Standout songs: <i>Wait for the Moment, My First Car, </i>and<i> Outro</i> </span>
+
+	  </div>
+
+	  <hr />
+
+	  <div class="entry">
+
+	 	<h1>First EP released - ALLITERATION</h1>
+	 	<h2>04-08-2017</h2>
+
+	 	<a href="http://pixlark.bandcamp.com"><img src="https://f4.bcbits.com/img/a2243455491_16.jpg" class="post-img"/></a>
+
+	 	<p>After three or four years of making music, I finally released an album. It's a four track EP called ALLITERATION. Thanks to reddit user <a href="https://www.reddit.com/u/SkullTraill">/u/SkullTraill</a> for the fantastic album cover. <a href="http://pixlark.bandcamp.com">The album is free on bandcamp</a>, or you can listen to the whole thing <a href="https://www.youtube.com/watch?v=xpp1FqeeP34">here</a> on YouTube.</p>
+
+	  </div>
       
       <hr />
 
