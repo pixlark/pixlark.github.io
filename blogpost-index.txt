@@ -10,3 +10,4 @@ blogposts/archive003-Edict.html
 blogposts/archive002-GLEngine.html
 blogposts/archive001-UpdateontheGame.html
 blogposts/archive000-MoregameworkandMandlebrotrenders.html
+blogposts/siteoverhaul.html
