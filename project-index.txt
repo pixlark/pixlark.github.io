@@ -1,0 +1,10 @@
+projects/archive006-LD.html
+projects/archive005-ColorPicker.html
+projects/tusls.html
+projects/boulders.html
+projects/ghostchaser.html
+projects/serve.html
+projects/beatgrid.html
+projects/lithp.html
+projects/markov-maker.html
+projects/simple-lang.html
