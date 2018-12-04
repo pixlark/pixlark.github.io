@@ -8,3 +8,4 @@ projects/beatgrid.html
 projects/lithp.html
 projects/markov-maker.html
 projects/simple-lang.html
+projects/rust-2048.html
