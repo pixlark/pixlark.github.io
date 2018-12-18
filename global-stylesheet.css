@@ -90,3 +90,19 @@ h2 {
 	margin-left: auto;
 	margin-right: auto;
 }
+
+.code-block {
+	/*background-color: #222222;*/
+	background-color: #0f0f0f;
+	color: #e8e8e8;
+	display: block;
+	margin-left: 100px;
+	margin-right: 100px;
+
+	border-radius: 8px;
+
+	padding-top:     2px;
+	padding-bottom:  2px;
+	padding-left:   20px;
+	padding-right:  20px;
+}
