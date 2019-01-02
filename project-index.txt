@@ -9,3 +9,5 @@ projects/lithp.html
 projects/markov-maker.html
 projects/simple-lang.html
 projects/rust-2048.html
+projects/winter-lang.html
+projects/bf-compiler.html
