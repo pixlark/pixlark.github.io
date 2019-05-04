@@ -13,3 +13,4 @@ blogposts/archive000-MoregameworkandMandlebrotrenders.html
 blogposts/siteoverhaul.html
 blogposts/winter-lang.html
 blogposts/brainfuck.html
+blogposts/badge.html
