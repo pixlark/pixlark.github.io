@@ -3,17 +3,36 @@
 }
 
 .whatisthis {
+	font-size: 20px;
 	position: fixed;
+	left: 12px;
+	top: 12px;
 	z-index: 5;
 }
 
 .index-links {
 	display: inline-block;
-	text-align: center;
+	text-align: left;
+	vertical-align: middle;
+}
+
+.other-links {
+	display: inline-block;
+	text-align: right;
+	vertical-align: middle;
+}
+
+.horiz-filler {
+	display: inline-block;
+	width: 5%;
 }
 
 .main-link {
 	font-size: 30px;
+}
+
+.other-link {
+	font-size: 20px;
 }
 
 .v-outer { /* Creates an html table the size of the parent (the background) */
