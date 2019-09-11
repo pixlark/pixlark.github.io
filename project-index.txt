@@ -11,3 +11,4 @@ projects/simple-lang.html
 projects/rust-2048.html
 projects/winter-lang.html
 projects/bf-compiler.html
+projects/badge.html
