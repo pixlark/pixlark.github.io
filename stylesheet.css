@@ -29,6 +29,12 @@ h1 {
 	font-weight: normal;
 }
 
+.subtitle {
+    font-size: 12pt;
+    margin-top: -20px;
+    color: darkgrey;
+}
+
 h4 {
 	margin-bottom: auto;
 }
