@@ -12,7 +12,7 @@
 	  <h3>Badge</h3>
 	</a>
 	<p>
-	  Badge is a functional programming language. Its syntax is drawn largely from Haskell other MLs, though the semantics are more similar to Lisp. It compiles to bytecode, which is run on a virtual machine. At the moment, it only supports a limited set of features, but what it does have is well-tested and stable. The interpreter is written in C++.
+      Badge is a dynamically typed, interpreted functional programming language written in C++. It compiles to bytecode which is run on a virtual machine. At the moment, it only supports a limited set of features, but what it does have is well-tested and very stable.
 	</p>
 	<h4>Sample code, calculating the 10th fibonacci number:</h4>
 	<pre>
@@ -20,11 +20,11 @@
 @import[prelude].
 
 func fib(n) {
-    func iter(a, b, n)
-        if   n == 0
-        then a
-        else this(b, a + b, n - 1).
-    iter(0, 1, n)
+  func iter(a, b, n)
+    if n == 0
+    then a
+    else this(b, a + b, n - 1).
+  iter(0, 1, n)
 }.
 
 % Prints "55"
@@ -35,7 +35,7 @@ println(fib(10)).
 	  <h3>Manetheren</h3>
 	</a>
 	<p>
-	  Manetheren is, at the moment, a small 3D game engine written in C++ that renders a grid-based level through the classic raycasting technique used in games like Wolfenstein 3D, DOOM, and Duke Nukem.
+	  Manetheren is, at the moment, a small 3D renderer written in C+. It draws a first person view of the level using old, classic raycasting techniques from games like Wolfenstein 3D and DOOM.
 	</p>
 	<img src="https://github.com/pixlark/Manetheren/raw/master/sample.gif" />
 	<a href="https://www.github.com/pixlark/LD44">
@@ -50,19 +50,23 @@ println(fib(10)).
 	  <h3>Scrift</h3>
 	</a>
 	<p>
-	  Scrift is an album I recorded over the summer of 2020, when I was stuck inside every day thanks to COVID-19.
+	  Scrift is an album I recorded during the 2020 quarantine.
 	</p>
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/_0UxQUbn8GA" frameborder="0" allow="clipboard-write; picture-in-picture" allowfullscreen></iframe>
 	<a href="https://pixlark.bandcamp.com/album/alliteration">
 	  <h3>ALLITERATION</h3>
 	</a>
-	<p>
-	  Alliteration was my first real music release in 2017, basically just the four best songs that I had made in the past year.
-	</p>
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/xpp1FqeeP34" frameborder="0" allow="clipboard-write; picture-in-picture" allowfullscreen></iframe>
-	<h3>Other various songs</h3>
+    <h3>Assorted covers</h3>
+    <p>
+      Sometimes I record covers of songs I like, for fun. Here's a couple.
+    </p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ooMXNjpL6C4" frameborder="0" allow="clipboard-write; picture-in-picture" allowfullscreen></iframe>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/Z3gcHudJ3Rs" frameborder="0" allow="clipboard-write; picture-in-picture" allowfullscreen></iframe>
+	<h3>Assorted originals</h3>
+    <p>
+      Sometimes I also write little one-off songs that aren't part of any album. Here's a couple of those.
+    </p>
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/HTpIQUn8tRg" frameborder="0" allow="clipboard-write; picture-in-picture" allowfullscreen></iframe>
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/9hKilUAqYVo" frameborder="0" allow="clipboard-write; picture-in-picture" allowfullscreen></iframe>
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/8Smq8ZjIpWk" frameborder="0" allow="clipboard-write; picture-in-picture" allowfullscreen></iframe>
   </body>
 </html>
