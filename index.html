@@ -7,7 +7,38 @@
   <body>
 	<h1>Brooke Tilley</h1>
     <h1 class="subtitle">or: the artist formerly known as Paul Tilley</h1>
+    <h2>About Me</h2>
+    <p>
+      I graduated in 2022 with a Bachelor's in Computer Science from Binghamton University. I now work at Tesla, probably on cool top secret stuff. If I told you, I'd have to kill you. In my free time I'm super into programming language development and music, both of which you'll find dominate this personal-project-website.
+    </p>
 	<h2>Projects</h2>
+    <a href="https://pixlark.github.io/cMajor">
+      <h3>C Major</h3>
+    </a>
+    <p>
+      A sane language on a similar abstraction level to C, that compiles to C and can (almost) seamlessly interact with C libraries, a-la Zig or Nim, but with a more functional lean. Written in Haskell. Remarkably unfinished.
+    </p>
+    <pre>
+      <code>
+# Only some of this code would currently compile.
+# However, this is the general direction of the language.          
+@entry(main)
+
+func fibonacci(n: int) -> int
+do {
+  var iter := func(a: int, b: int, n: int) -> int
+              do if n == 0
+                 then a
+                 else iter(b, a, n - 1);
+  iter(0, 1, n)
+}
+
+func main() -> nothing
+do {
+  print fibonacci(10);
+}
+      </code>
+    </pre>
 	<a href="https://pixlark.github.io/Badge">
 	  <h3>Badge</h3>
 	</a>
