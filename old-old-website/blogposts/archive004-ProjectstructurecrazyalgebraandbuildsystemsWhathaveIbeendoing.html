@@ -1,0 +1,10 @@
+<div ,="" class="entry" id="08-09-2017">
+<h1>Project structure, crazy algebra, and build systems. What have I been doing?</h1>
+<h2>08-09-2017</h2>
+<p>I finished a <a href="https://github.com/pixlark/Agario-SDL">big project</a> today. It doesn't look like much, because on the gameplay side it's very simple. You move around and absorb pellets. There's no enemies or anything. It's a half-assed clone of <a href="https://agar.io/">agar.io</a>. But if you look inside the code, it's actually quite complicated.</p>
+<p>I wrote a robust (if simplistic) framework for 2D rendering that involves transformation between screen coordinates, or the coordinates that you use to write to the window, and world coordinates, or the imaginary coordinates that objects in the world use to keep track of each other, including translation and zooming of the camera. You can see the equations that accomplish that <a href="https://github.com/pixlark/Agario-SDL/blob/a3b97c079523f0539b26466f57ec91e4ff39ed48/src/draw.cc#L46">here</a>. Textures are kept track of using a hash-table (the implementation of which I wrote as well, and you can find <a href="https://github.com/pixlark/pixlib/blob/master/pixstructs.h">here</a>), and there's even code to calculate infinitely scrolling backgrounds.</p>
+<p>On top of all that, I wrote a <a href="https://github.com/pixlark/Agario-SDL/blob/master/build.py">build system</a> that hooks into the Visual Studio compiler on the command line so that I never have to open Visual Studio again to compile on Windows - it only opens when I need to debug. And when I want to make another SDL project, I don't have to go and redo all of the damn project settings, I can just copy-paste build.py and modify a few strings. It's beautiful.</p>
+<p>Maybe you can tell, but I'm quite proud. I finally have a basis for my projects - a solid framework and build system that I can use for any future 2D games. Let's see what I end up doing with it.</p>
+<span class="small-text">Album I can't stop listening to: <i>My First Car</i> by Vulfpeck <br/>
+		Standout songs: <i>Wait for the Moment, My First Car, </i>and<i> Outro</i> </span>
+</div>

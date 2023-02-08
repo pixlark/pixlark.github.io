@@ -1,0 +1,44 @@
+body {
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img {
+	max-width: 600px;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:unvisited {
+	color: #00278e;
+}
+
+a:visited {
+	color: #00278e;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+h1 {
+	text-align: center;
+	font-weight: normal;
+}
+
+.subtitle {
+    font-size: 12pt;
+    margin-top: -20px;
+    color: darkgrey;
+}
+
+h4 {
+	margin-bottom: auto;
+}
+
+code {
+	font-size: 11pt;
+}

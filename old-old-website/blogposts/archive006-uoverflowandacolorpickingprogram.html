@@ -1,0 +1,36 @@
+<div ,="" class="entry" id="23-06-2017">
+<h1>u8 overflow and a color picking program.</h1>
+<h2>23-06-2017</h2>
+<p>My and my friend <a href="https://ben-humphries.github.io">Ben</a> have been working
+        on small projects together for the past week or so. One of
+        us will screenshare to the other and we work together for a
+        couple hours. After that, whoever is coding usually takes
+        over and finishes it out on their own time. Most recently,
+        I was the coder, and our project was <a href="https://github.com/pixlark/ColorPicker">a color picking
+        program,</a> where you have an adjustable gradient that you
+        can click on which gives you an RGB code.</p>
+<p>Well, at one point we have an incredibly strange bug.
+        The method draw_gradient() was getting stuck in an infinite
+        loop, and we couldn't figure why. Our first thought was
+        that it was hitting some sort of undefined behaviour in the
+        SDL library, so we commented out everything besides the
+        nested for loops. Still happened, except for when we never
+        called draw_gradient(). So it had to be something with the
+        for loops... but what? It's a <i>for loop</i>, the only way
+        for it to be infinite is if the condition is never-</p>
+<p>"It's overflowing!" we cried out at the same time. Since
+        each RGB value was an unsigned 8 bit integer, when we
+        looped over it to draw the gradient, it would never
+        actually reach the condition, simply increment over 255 and
+        overflow into 0. So in order to keep using u8s rather than
+        u16s (because we really needed that efficiency for a
+        color-picking program), the for-loops were changed to
+        do-while loops.</p>
+<p>Hopefully this is a bit of a lesson on premature
+        optimization. And on the topic of the color picker - I'm
+        planning to keep working on it myself and add an HSV mode.
+        Look forward to it. And if you want to take a glance at
+        another project we started together that Ben is now
+        upkeeping, check out <a href="https://github.com/ben-humphries/Conways-Game-Of-Life">Conway's
+        Game of Life</a>.</p>
+</div>
