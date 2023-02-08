@@ -1,4 +1,5 @@
-baseURL = 'http://pixlark.github.io/'
+baseURL = ''
+relativeURLs = true
 languageCode = 'en-us'
 title = 'Brooke Tilley'
 theme = 'PaperMod'
