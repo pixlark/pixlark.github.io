@@ -2,14 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://pixlark.github.io/about-me/</loc>
+    <loc>/about-me/</loc>
   </url><url>
-    <loc>http://pixlark.github.io/</loc>
+    <loc>/</loc>
   </url><url>
-    <loc>http://pixlark.github.io/categories/</loc>
+    <loc>/categories/</loc>
   </url><url>
-    <loc>http://pixlark.github.io/pages/</loc>
+    <loc>/pages/</loc>
   </url><url>
-    <loc>http://pixlark.github.io/tags/</loc>
+    <loc>/tags/</loc>
   </url>
 </urlset>
