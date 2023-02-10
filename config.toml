@@ -3,6 +3,7 @@ relativeURLs = true
 languageCode = 'en-us'
 title = 'Brooke Tilley'
 theme = 'PaperMod'
+publishDir = 'docs'
 
 [params]
 defaultTheme = 'light'
