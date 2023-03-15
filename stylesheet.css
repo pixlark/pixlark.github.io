@@ -1,6 +1,8 @@
 html {
     height: 100%;
     margin: 0;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 body {
