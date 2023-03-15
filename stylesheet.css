@@ -1,10 +1,12 @@
 html {
     height: 100%;
+    margin: 0;
 }
 
 body {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     height: 100%;
+    margin: 0;
 }
 
 #parent {
@@ -23,6 +25,12 @@ h1 {
 
 h2 {
     font-size: 2em;
+    margin-bottom: 0em;
+    padding-bottom: 0em;
+}
+
+ul {
+    margin-top: 0.6em;
 }
 
 p, li {
@@ -34,10 +42,10 @@ b {
 }
 
 :link {
-    text-decoration: none;
-    color: grey;
+    text-decoration: underline;
+    color: #606060;
 }
 
 :visited {
-    color: grey;
+    color: #606060;
 }
