@@ -1,0 +1,43 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 100%;
+}
+
+#parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#content {
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+p, li {
+    font-size: 1.5em;
+}
+
+b {
+    font-size: 1.1em;
+}
+
+:link {
+    text-decoration: none;
+    color: grey;
+}
+
+:visited {
+    color: grey;
+}
